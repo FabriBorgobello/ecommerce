@@ -5,17 +5,17 @@ async function getProducts() {
   return await response.json();
 }
 
-async function addToCart(product) {
+async function addToCart(product, quantity = 1) {
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
   let productInCart = cart.find((item) => item.id === product.id);
   if (productInCart) {
-    productInCart.quantity++;
+    productInCart.quantity += quantity; // Add the specified quantity
   } else {
-    productInCart = { ...product, quantity: 1 };
+    productInCart = { ...product, quantity };
     cart.push(productInCart);
   }
   localStorage.setItem("cart", JSON.stringify(cart));
-  alert("Added to cart");
+  alert(`Added ${quantity} ${quantity === 1 ? "item" : "items"} to cart`);
 }
 
 async function displayProductList() {

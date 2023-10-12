@@ -3,11 +3,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const totalPriceElement = document.getElementById("total-price");
 
   // Get cart data from localStorage or your API endpoint.
-  const cart = getCartData(); // Replace with your logic to retrieve cart data.
+  const cart = getCartData();
 
   if (cart.length === 0) {
-    cartItemsContainer.innerHTML = "<p>Your cart is empty.</p>";
-    totalPriceElement.textContent = "$0.00"; // Set total to zero when the cart is empty.
+    showEmptyCartMessage();
   } else {
     // Render cart items
     renderCartItems(cart, cartItemsContainer);
@@ -72,7 +71,10 @@ function removeFromCart(item) {
     const total = calculateTotal(cart);
     totalPriceElement.textContent = `$${total.toFixed(2)}`;
 
-    cartItemsContainer.innerHTML = "<p>Your cart is empty.</p>";
+    if (cart.length === 0) {
+      showEmptyCartMessage();
+    }
+
     // Optional: Display a confirmation message
     alert(`Removed ${item.name} from the cart`);
   } else {
@@ -86,4 +88,9 @@ function calculateTotal(cart) {
     total += item.price * item.quantity;
   });
   return total;
+}
+
+function showEmptyCartMessage() {
+  const cartItemsContainer = document.getElementById("cart-items");
+  cartItemsContainer.innerHTML = "<p>Your cart is empty.</p>";
 }
