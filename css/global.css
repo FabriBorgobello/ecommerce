@@ -30,3 +30,7 @@ iframe.navbar-iframe {
   width: 100%;
   height: 4rem;
 }
+
+.error {
+  color: red;
+}
