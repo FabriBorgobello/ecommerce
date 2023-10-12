@@ -1,0 +1,33 @@
+/* Product list styles */
+#product-list {
+  list-style-type: none;
+}
+
+.product-card {
+  border: 1px solid #ddd;
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.product-name {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.product-price {
+  font-size: 18px;
+  color: #007bff; /* Blue color for price */
+  margin-bottom: 10px;
+}
+
+.add-to-cart-btn {
+  display: block;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  margin-top: 10px;
+  cursor: pointer;
+}

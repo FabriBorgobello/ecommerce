@@ -1,0 +1,22 @@
+/* Navbar styles */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  background-color: #007bff; /* Blue background color */
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+  margin: 0 10px;
+  font-weight: bold;
+}

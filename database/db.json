@@ -1,0 +1,75 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "Product 1",
+            "price": 100,
+            "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus harum at pariatur consequuntur quasi. Incidunt minus quis laudantium nemo sapiente corporis qui veniam impedit. Mollitia inventore consequuntur exercitationem molestias obcaecati.",
+            "image": "https://picsum.photos/600"
+        },
+        {
+            "id": 2,
+            "name": "Product 2",
+            "price": 100,
+            "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus harum at pariatur consequuntur quasi. Incidunt minus quis laudantium nemo sapiente corporis qui veniam impedit. Mollitia inventore consequuntur exercitationem molestias obcaecati.",
+            "image": "https://picsum.photos/600"
+        },
+        {
+            "id": 3,
+            "name": "Product 3",
+            "price": 100,
+            "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus harum at pariatur consequuntur quasi. Incidunt minus quis laudantium nemo sapiente corporis qui veniam impedit. Mollitia inventore consequuntur exercitationem molestias obcaecati.",
+            "image": "https://picsum.photos/600"
+        },
+        {
+            "id": 4,
+            "name": "Product 4",
+            "price": 100,
+            "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus harum at pariatur consequuntur quasi. Incidunt minus quis laudantium nemo sapiente corporis qui veniam impedit. Mollitia inventore consequuntur exercitationem molestias obcaecati.",
+            "image": "https://picsum.photos/600"
+        },
+        {
+            "id": 5,
+            "name": "Product 5",
+            "price": 100,
+            "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus harum at pariatur consequuntur quasi. Incidunt minus quis laudantium nemo sapiente corporis qui veniam impedit. Mollitia inventore consequuntur exercitationem molestias obcaecati.",
+            "image": "https://picsum.photos/600"
+        },
+        {
+            "id": 6,
+            "name": "Product 6",
+            "price": 100,
+            "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus harum at pariatur consequuntur quasi. Incidunt minus quis laudantium nemo sapiente corporis qui veniam impedit. Mollitia inventore consequuntur exercitationem molestias obcaecati.",
+            "image": "https://picsum.photos/600"
+        },
+        {
+            "id": 7,
+            "name": "Product 7",
+            "price": 100,
+            "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus harum at pariatur consequuntur quasi. Incidunt minus quis laudantium nemo sapiente corporis qui veniam impedit. Mollitia inventore consequuntur exercitationem molestias obcaecati.",
+            "image": "https://picsum.photos/600"
+        },
+        {
+            "id": 8,
+            "name": "Product 8",
+            "price": 100,
+            "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus harum at pariatur consequuntur quasi. Incidunt minus quis laudantium nemo sapiente corporis qui veniam impedit. Mollitia inventore consequuntur exercitationem molestias obcaecati.",
+            "image": "https://picsum.photos/600"
+        },
+        {
+            "id": 9,
+            "name": "Product 9",
+            "price": 100,
+            "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus harum at pariatur consequuntur quasi. Incidunt minus quis laudantium nemo sapiente corporis qui veniam impedit. Mollitia inventore consequuntur exercitationem molestias obcaecati.",
+            "image": "https://picsum.photos/600"
+        },
+        {
+            "id": 10,
+            "name": "Product 10",
+            "price": 1001,
+            "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus harum at pariatur consequuntur quasi. Incidunt minus quis laudantium nemo sapiente corporis qui veniam impedit. Mollitia inventore consequuntur exercitationem molestias obcaecati.",
+            "image": "https://picsum.photos/600"
+        }
+    ],
+    "orders": []
+}

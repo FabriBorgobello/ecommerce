@@ -1,0 +1,48 @@
+/* Cart page styles */
+#cart-items {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+.cart-item {
+  border: 1px solid #ddd;
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart-item-details {
+  flex: 1;
+}
+
+.cart-item button {
+  background-color: #ff5722; /* Orange color for Remove button */
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+#total-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  text-align: right;
+}
+
+#total-price {
+  font-size: 20px;
+  color: #333;
+  font-weight: bold;
+}
