@@ -26,6 +26,11 @@ async function displayProductList() {
     item.innerHTML =
       /* HTML */
       `<div class="product-card">
+        <img
+          class="product-image"
+          src="${product.image}"
+          alt="${product.name}"
+        />
         <h2 class="product-name">
           <a href="product.html?id=${product.id}">${product.name}</a>
         </h2>

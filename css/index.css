@@ -1,13 +1,25 @@
 /* Product list styles */
 #product-list {
   list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+  gap: 1rem;
+  padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .product-card {
   border: 1px solid #ddd;
   background-color: #fff;
-  padding: 20px;
-  margin-bottom: 20px;
+  padding: 1rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  text-align: center;
 }
 
 .product-name {
@@ -16,9 +28,14 @@
 }
 
 .product-price {
-  font-size: 18px;
   color: #007bff; /* Blue color for price */
-  margin-bottom: 10px;
+}
+
+.product-image {
+  width: 100%;
+  height: 239px;
+  margin-bottom: 0.25rem;
+  object-fit: cover;
 }
 
 .add-to-cart-btn {

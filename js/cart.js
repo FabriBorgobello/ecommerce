@@ -72,6 +72,7 @@ function removeFromCart(item) {
     const total = calculateTotal(cart);
     totalPriceElement.textContent = `$${total.toFixed(2)}`;
 
+    cartItemsContainer.innerHTML = "<p>Your cart is empty.</p>";
     // Optional: Display a confirmation message
     alert(`Removed ${item.name} from the cart`);
   } else {

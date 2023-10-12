@@ -9,12 +9,17 @@ body {
   background-color: #007bff; /* Blue background color */
   color: #fff;
   padding: 10px;
+}
+
+.navbar div.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.navbar a {
+.navbar div.nav-container a {
   text-decoration: none;
   color: #fff;
   margin: 0 10px;
