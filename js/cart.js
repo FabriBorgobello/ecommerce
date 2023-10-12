@@ -93,4 +93,5 @@ function calculateTotal(cart) {
 function showEmptyCartMessage() {
   const cartItemsContainer = document.getElementById("cart-items");
   cartItemsContainer.innerHTML = "<p>Your cart is empty.</p>";
+  document.querySelector(".checkout-container").style.display = "none";
 }
