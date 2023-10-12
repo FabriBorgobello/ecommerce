@@ -1,13 +1,5 @@
 # Webtech E-Commerce
 
-To run the json-server, run the following command in the terminal:
+This is a simple e-commerce website for the Webtech course 2023.
 
-```bash
-json-server --watch database/db.json
-```
-
-Remember to install json-server first:
-
-```bash
-npm install -g json-server
-```
+This project requires an API server to be running at `http://localhost:3000`. You can find the API server [in this repository](https://github.com/FabriBorgobello/webtech-api). Follow the instructions in the README file to set up and run the API server.
