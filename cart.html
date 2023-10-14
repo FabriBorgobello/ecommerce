@@ -14,9 +14,15 @@
     <div id="total-container">
       <p>Total: <span id="total-price">$0.00</span></p>
     </div>
-    <div class="checkout-container">
-      <button class="checkout-btn">Checkout</button>
-    </div>
+    <form
+      action="/create-checkout-session"
+      method="POST"
+      class="checkout-container"
+    >
+      <button class="checkout-btn" type="submit" id="checkout-button">
+        Checkout
+      </button>
+    </form>
     <script src="js/cart.js"></script>
   </body>
 </html>
