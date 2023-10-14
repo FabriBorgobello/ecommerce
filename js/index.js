@@ -1,4 +1,5 @@
 console.log("Hello World");
+console.log("Testing:", process.env.TEST);
 
 async function getProducts() {
   const response = await fetch("http://localhost:3000/products");
