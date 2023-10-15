@@ -15,6 +15,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const total = calculateTotal(cart);
     totalPriceElement.textContent = `$${total.toFixed(2)}`;
   }
+
+  // Optional: Add event listener to the checkout button
+  const checkoutButton = document.getElementById("checkout-btn");
+  checkoutButton.addEventListener("click", goToStripe);
 });
 
 function getCartData() {
@@ -94,4 +98,29 @@ function showEmptyCartMessage() {
   const cartItemsContainer = document.getElementById("cart-items");
   cartItemsContainer.innerHTML = "<p>Your cart is empty.</p>";
   document.querySelector(".checkout-container").style.display = "none";
+}
+
+async function goToStripe() {
+  console.log("Creating Stripe checkout session...");
+  const cart = getCartData();
+
+  const response = await fetch(
+    "http://localhost:3001/create-checkout-session",
+    {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(
+        cart.map((item) => {
+          return {
+            price: item.price_id,
+            quantity: item.quantity,
+          };
+        })
+      ),
+    }
+  );
+
+  const data = await response.json();
+  console.log("Redirecting to Stripe...");
+  window.location.href = data.url;
 }
