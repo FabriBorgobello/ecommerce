@@ -14,6 +14,9 @@ document.addEventListener("DOMContentLoaded", () => {
     // Calculate and display the total
     const total = calculateTotal(cart);
     totalPriceElement.textContent = `$${total.toFixed(2)}`;
+
+    const checkoutBtn = document.getElementById("checkout-btn");
+    checkoutBtn.addEventListener("click", goToStripe);
   }
 });
 
@@ -94,4 +97,28 @@ function showEmptyCartMessage() {
   const cartItemsContainer = document.getElementById("cart-items");
   cartItemsContainer.innerHTML = "<p>Your cart is empty.</p>";
   document.querySelector(".checkout-container").style.display = "none";
+}
+
+async function goToStripe() {
+  // Get products from localstorage.
+  const cart = getCartData();
+
+  const body = cart.map((product) => {
+    return {
+      price: product.stripe_price_id,
+      quantity: product.quantity,
+    };
+  });
+
+  // Connect with payment service.
+  console.log("Connecting with Payment Servicet...");
+  fetch("http://localhost:4242/create-checkout-session", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(body),
+  })
+    .then((res) => res.json())
+    .then((data) => {
+      window.location.href = data.url;
+    });
 }
